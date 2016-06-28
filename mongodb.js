@@ -13,8 +13,8 @@ MongoClient.connect(url, function (err, db) {
 });
 
 var insertDoc = function (db, addData, resCallback, callback) {
-
-    if (addData)  db.collection('nav').insertOne(addData, function (err, result) {
+    //if (addData)  db.collection('nav').insertOne(addData, function (err, result) {
+    if (addData)  db.collection(addData['collection']).insert(addData['data'], function (err, result) {
         if (err != 'null') {
             assert.equal(err, null);
             console.log("__Inserted a document into the restaurants collection.");
@@ -27,7 +27,7 @@ var insertDoc = function (db, addData, resCallback, callback) {
 };
 
 var findDoc = function (db, findData, resCallback, callback) {
-    var cursor = db.collection('nav').find(findData).toArray(function (err, data) {
+    var cursor = db.collection(findData['collection']).find(findData['query'], findData['select']).toArray(function (err, data) {
         resCallback(data);
         callback();
     });
@@ -55,10 +55,10 @@ var updateDoc = function (db, findData, editData, resCallback, callback) {
         });
 };
 
-var removeDoc = function(db,removeData, resCallback, callback) {
+var removeDoc = function (db, removeData, resCallback, callback) {
     db.collection('nav').deleteMany(
         removeData,
-        function(err, results) {
+        function (err, results) {
             //console.log(results);
             resCallback(results);
             callback();
@@ -92,9 +92,9 @@ module.exports = {
         });
     },
     remove: function (removeData, callback) {
-        MongoClient.connect(url, function(err, db) {
+        MongoClient.connect(url, function (err, db) {
             assert.equal(null, err);
-            removeDoc(db, removeData, callback, function() {
+            removeDoc(db, removeData, callback, function () {
                 db.close();
             });
         });

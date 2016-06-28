@@ -1,0 +1,683 @@
+.font {
+  font-family: 'Roboto', sans-serif;
+}
+.display-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+.justify-content {
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+.flex-flow {
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+}
+.fade-common {
+  /* -webkit-transition-delay: .3s;
+   transition-delay: .3s;*/
+  opacity: 0;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.fade.ng-enter {
+  /* -webkit-transition-delay: .3s;
+   transition-delay: .3s;*/
+  opacity: 0;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /*transition:0.5s linear all;
+  opacity:0;*/
+}
+.fade.ng-enter:nth-child(15) {
+  -webkit-transition-delay: 3000ms;
+  transition-delay: 3000ms;
+}
+.fade.ng-enter:nth-child(14) {
+  -webkit-transition-delay: 2800ms;
+  transition-delay: 2800ms;
+}
+.fade.ng-enter:nth-child(13) {
+  -webkit-transition-delay: 2600ms;
+  transition-delay: 2600ms;
+}
+.fade.ng-enter:nth-child(12) {
+  -webkit-transition-delay: 2400ms;
+  transition-delay: 2400ms;
+}
+.fade.ng-enter:nth-child(11) {
+  -webkit-transition-delay: 2200ms;
+  transition-delay: 2200ms;
+}
+.fade.ng-enter:nth-child(10) {
+  -webkit-transition-delay: 2000ms;
+  transition-delay: 2000ms;
+}
+.fade.ng-enter:nth-child(9) {
+  -webkit-transition-delay: 1800ms;
+  transition-delay: 1800ms;
+}
+.fade.ng-enter:nth-child(8) {
+  -webkit-transition-delay: 1600ms;
+  transition-delay: 1600ms;
+}
+.fade.ng-enter:nth-child(7) {
+  -webkit-transition-delay: 1400ms;
+  transition-delay: 1400ms;
+}
+.fade.ng-enter:nth-child(6) {
+  -webkit-transition-delay: 1200ms;
+  transition-delay: 1200ms;
+}
+.fade.ng-enter:nth-child(5) {
+  -webkit-transition-delay: 1000ms;
+  transition-delay: 1000ms;
+}
+.fade.ng-enter:nth-child(4) {
+  -webkit-transition-delay: 800ms;
+  transition-delay: 800ms;
+}
+.fade.ng-enter:nth-child(3) {
+  -webkit-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+.fade.ng-enter:nth-child(2) {
+  -webkit-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+.fade.ng-enter:nth-child(1) {
+  -webkit-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+/* The finishing CSS styles for the enter animation */
+.fade.ng-enter.ng-enter-active {
+  /*  opacity:1;*/
+  opacity: 1;
+  -webkit-transform: translate(0, -1.6rem);
+  -ms-transform: translate(0, -1.6rem);
+  transform: translate(0, -1.6rem);
+}
+.fade.ng-leave {
+  opacity: 1;
+  -webkit-transform: translate(0, -1.6rem);
+  -ms-transform: translate(0, -1.6rem);
+  transform: translate(0, -1.6rem);
+  /*  transition:0.5s linear all;
+  opacity:1;*/
+}
+.fade.ng-leave.ng-leave-active {
+  opacity: 1;
+  -webkit-transform: translate(0, -1.6rem);
+  -ms-transform: translate(0, -1.6rem);
+  transform: translate(0, -1.6rem);
+  /*  opacity:0;*/
+}
+.fade.ng-move {
+  /* -webkit-transition-delay: .3s;
+   transition-delay: .3s;*/
+  opacity: 0;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  -webkit-transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94), -webkit-transform 0.9s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /*transition:0.5s linear all;
+  opacity:0;*/
+}
+.fade.ng-move:nth-child(15) {
+  -webkit-transition-delay: 3000ms;
+  transition-delay: 3000ms;
+}
+.fade.ng-move:nth-child(14) {
+  -webkit-transition-delay: 2800ms;
+  transition-delay: 2800ms;
+}
+.fade.ng-move:nth-child(13) {
+  -webkit-transition-delay: 2600ms;
+  transition-delay: 2600ms;
+}
+.fade.ng-move:nth-child(12) {
+  -webkit-transition-delay: 2400ms;
+  transition-delay: 2400ms;
+}
+.fade.ng-move:nth-child(11) {
+  -webkit-transition-delay: 2200ms;
+  transition-delay: 2200ms;
+}
+.fade.ng-move:nth-child(10) {
+  -webkit-transition-delay: 2000ms;
+  transition-delay: 2000ms;
+}
+.fade.ng-move:nth-child(9) {
+  -webkit-transition-delay: 1800ms;
+  transition-delay: 1800ms;
+}
+.fade.ng-move:nth-child(8) {
+  -webkit-transition-delay: 1600ms;
+  transition-delay: 1600ms;
+}
+.fade.ng-move:nth-child(7) {
+  -webkit-transition-delay: 1400ms;
+  transition-delay: 1400ms;
+}
+.fade.ng-move:nth-child(6) {
+  -webkit-transition-delay: 1200ms;
+  transition-delay: 1200ms;
+}
+.fade.ng-move:nth-child(5) {
+  -webkit-transition-delay: 1000ms;
+  transition-delay: 1000ms;
+}
+.fade.ng-move:nth-child(4) {
+  -webkit-transition-delay: 800ms;
+  transition-delay: 800ms;
+}
+.fade.ng-move:nth-child(3) {
+  -webkit-transition-delay: 600ms;
+  transition-delay: 600ms;
+}
+.fade.ng-move:nth-child(2) {
+  -webkit-transition-delay: 400ms;
+  transition-delay: 400ms;
+}
+.fade.ng-move:nth-child(1) {
+  -webkit-transition-delay: 200ms;
+  transition-delay: 200ms;
+}
+/* The finishing CSS styles for the enter animation */
+.fade.ng-move.ng-move-active {
+  /*  opacity:1;*/
+  opacity: 1;
+  -webkit-transform: translate(0, -1.6rem);
+  -ms-transform: translate(0, -1.6rem);
+  transform: translate(0, -1.6rem);
+}
+.repeated-item.ng-move,
+.repeated-item.ng-move {
+  opacity: 1;
+  -webkit-transform: translate(0, -1.6rem);
+  -ms-transform: translate(0, -1.6rem);
+  transform: translate(0, -1.6rem);
+  /* transition: all 0.5s linear;
+  opacity: 0;*/
+}
+.repeated-item.ng-enter.ng-enter-active,
+.repeated-item.ng-move.ng-move-active {
+  opacity: 1;
+  -webkit-transform: translate(0, -1.6rem);
+  -ms-transform: translate(0, -1.6rem);
+  transform: translate(0, -1.6rem);
+  /*opacity: 1;*/
+}
+.slide.ng-enter {
+  transition: 0.5s linear all;
+  transform: translateY(-100px);
+}
+.slide.ng-enter.ng-enter-active {
+  transform: translateY(0);
+}
+.animate-enter,
+.animate-leave {
+  -webkit-transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -moz-transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -ms-transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  -o-transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  transition: 400ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
+  position: relative;
+  display: block;
+}
+.animate-leave.animate-leave-active,
+.animate-enter {
+  -webkit-transform: rotateX(-180deg) translatez(30px);
+  -moz-transform: rotateX(-180deg) translatez(30px);
+  -ms-transform: rotateX(-180deg) translatez(30px);
+  -o-transform: rotateX(-180deg) translatez(30px);
+  transform: rotateX(-180deg) translatez(30px);
+  opacity: 0;
+  height: 0px;
+}
+.animate-enter.animate-enter-active,
+.animate-leave {
+  -webkit-transform: rotateX(0deg) translatez(30px);
+  -moz-transform: rotateX(0deg) translatez(30px);
+  -ms-transform: rotateX(0deg) translatez(30px);
+  -o-transform: rotateX(0deg) translatez(30px);
+  transform: rotateX(0deg) translatez(30px);
+  opacity: 1;
+  height: 30px;
+}
+@media (min-width: 768px) {
+  html,
+  body {
+    height: 100%;
+  }
+  /*.container {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }*/
+  body section.container {
+    flex-direction: row;
+    /*    flex-wrap: nowrap;
+        align-items: stretch;
+        width: 100%;
+        height: 100%;*/
+    align-items: stretch;
+    width: 100%;
+    height: 100%;
+  }
+  body section.container [ui-view='desktop'] {
+    flex-direction: column;
+  }
+  body section.container div.about {
+    overflow-y: hidden;
+  }
+  body section.container h1 {
+    flex: 0 1 75% !important;
+  }
+  body section.container p {
+    flex: 0 1 82% !important;
+  }
+  body section.container section.articles-wrap {
+    flex-flow: row nowrap !important;
+    padding-top: 15px !important;
+  }
+  body section.container section.articles-wrap article {
+    padding: 0 15px !important;
+  }
+  body section.container section.articles-wrap article:first-child,
+  body section.container section.articles-wrap article:last-child {
+    padding: 0 !important;
+  }
+  body section.container div.about div.container h1 {
+    font-size: 40px;
+  }
+  body section.container footer {
+    margin-top: 100px;
+  }
+  body section.container footer ul.socials li {
+    width: 50px;
+    height: 50px;
+  }
+  body section.container footer ul.socials li i {
+    font-size: 32px;
+  }
+  body section.container footer .address {
+    margin: 20px 0;
+  }
+  body section.container footer ul.contacts {
+    margin-bottom: 34px;
+    flex-flow: row nowrap;
+  }
+  body section.container footer ul.contacts li {
+    margin-right: 35px;
+    padding-bottom: 0px;
+  }
+  body section.container footer ul.contacts li:last-child {
+    margin-right: 0px;
+  }
+  body section.container #nav {
+    flex: 0 auto;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  body section.container #nav ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: initial;
+  }
+  body section.container #nav #nav-details {
+    max-width: 322px;
+    flex: 1 1 100%;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0;
+    justify-content: initial;
+  }
+  body section.container #nav-details .filter .filter-item .item-wrap {
+    padding: 12px 25px 12px 23px;
+  }
+  body section.container #main {
+    flex: 1 100%;
+  }
+  body section.container main.goods {
+    flex-direction: row;
+  }
+  body section.container main.goods section.header {
+    position: fixed;
+  }
+  body section.container main.goods section.goods {
+    margin-top: 118px;
+    overflow-y: scroll;
+    height: 100%;
+  }
+  body section.container main.goods section.goods ul {
+    justify-content: flex-start !important;
+  }
+  body section.container main.goods section.goods ul li.good-item {
+    flex: 1 1 !important;
+  }
+  body section.container main.product section.header header {
+    padding-left: 50px !important;
+  }
+  body section.container main.product section.header header h1 {
+    flex: 1;
+    text-align: left;
+  }
+  body section.container main.product section.product {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  body section.container main.product section.product .img-container {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px 30px 30px 15px;
+  }
+  body section.container main.product section.product .img-container ul.img-nav {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column nowrap;
+    padding: 10px;
+  }
+  body section.container main.product section.product .img-container ul.img-nav li.item {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+  }
+  body section.container main.product section.product .img-container ul.img-nav li.item:hover {
+    border: 3px solid #f90;
+    border-radius: 4px;
+  }
+  body section.container main.product section.product .img-container ul.img-nav li.item img {
+    max-width: 48px;
+    max-height: 48px;
+    width: 100%;
+  }
+  body section.container main.product section.product .img-container .img-target {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+  }
+  body section.container main.product section.product .img-container .img-target img {
+    max-height: 350px;
+    width: auto;
+  }
+  body section.container main.product section.product section.info {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 0 1 30%;
+    padding: 15px 30px 30px 15px;
+  }
+  body section.container main.product section.product section.info .good-caption span {
+    font-family: 'Roboto', sans-serif;
+    color: #4b555a;
+    font-size: 21px;
+    font-weight: 200;
+    text-align: center;
+  }
+  body section.container main.product section.product section.info .good-tools {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 5% 5% 0 5%;
+    margin-top: 15px;
+  }
+  body section.container main.product section.product section.info .good-tools .left-side {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column wrap;
+    margin-right: 2%;
+  }
+  body section.container main.product section.product section.info .good-tools .left-side .price-wrap {
+    min-width: 80px;
+    font-family: 'Roboto', sans-serif;
+    color: #4b555a;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  body section.container main.product section.product section.info .good-tools .left-side .price-wrap span.number {
+    font-size: 19px;
+    font-weight: 800;
+  }
+  body section.container main.product section.product section.info .good-tools .left-side .price-wrap span.currency {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  body section.container main.product section.product section.info .good-tools .left-side .state-wrap span {
+    font-family: 'Roboto', sans-serif;
+    color: #4b555a;
+    font-size: 14px;
+    font-weight: 200;
+  }
+  body section.container main.product section.product section.info .good-tools .left-side .topseller-wrap {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 11px;
+    color: #090;
+    padding: 18% 0 0 0;
+  }
+  body section.container main.product section.product section.info .good-tools .right-side .buy-wrap {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #00acbd;
+    -webkit-transition: all 0.2s cubic-bezier(0.3, 1, 0.3, 1);
+    transition: all 0.2s cubic-bezier(0.3, 1, 0.3, 1);
+    min-width: 150px;
+    min-height: 40px;
+    border-radius: 4%;
+  }
+  body section.container main.product section.product section.info .good-tools .right-side .buy-wrap .buy {
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+  }
+  body section.container main.product section.product section.info .good-tools .right-side .buy-wrap i {
+    color: #fff;
+    font-weight: 200;
+    font-size: 23px;
+    margin-left: 6px;
+    /*  -webkit-transition: all .1s cubic-bezier(.3, 1, .3, 1);
+                    transition: all .1s cubic-bezier(.3, 1, .3, 1);
+                    -webkit-transition-delay: 150ms;
+                    transition-delay: 150ms;*/
+  }
+  body section.container main.product section.product section.info .good-tools .right-side .buy-wrap:hover {
+    /*i {
+                    -webkit-transform: translate(4px);
+                    -ms-transform: translate(4px);
+                    transform: translate(4px);
+
+                    -webkit-transition: all .3s cubic-bezier(.3, 1, .3, 1);
+                    transition: all .3s cubic-bezier(.3, 1, .3, 1);
+                  }*/
+    background-color: #0098aa;
+  }
+  body section.container main.product section.product section.details {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 0 1 70%;
+    padding: 15px;
+    margin-top: 15px;
+  }
+  body section.container main.product section.product section.details .header {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+  body section.container main.product section.product section.details .header span {
+    font-weight: 200;
+    font-size: 44px;
+    color: #222;
+    font-family: 'Roboto', sans-serif;
+  }
+  body section.container main.product section.product section.details ul {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  body section.container main.product section.product section.details ul li {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row nowrap;
+    flex: 1;
+    min-height: 25px;
+    padding: 4px 20px;
+  }
+  body section.container main.product section.product section.details ul li .title {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    width: 30%;
+    align-items: flex-start;
+    padding-right: 10px;
+    flex: 1 1 auto;
+  }
+  body section.container main.product section.product section.details ul li .title span {
+    color: #999;
+    font-size: 17px;
+    font-weight: 400;
+    color: #777a7d;
+    font-family: 'Roboto', sans-serif;
+  }
+  body section.container main.product section.product section.details ul li .value {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    width: 70%;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 2 1 auto;
+  }
+  body section.container main.product section.product section.details ul li .value span {
+    color: #999;
+    font-size: 17px;
+    font-weight: 400;
+    color: #777a7d;
+    font-family: 'Roboto', sans-serif;
+  }
+  body section.container #main [ui-view] main section.header header {
+    padding-left: 50px;
+  }
+}
+/*@media (min-width: 992px) {
+  .container {
+    flex-direction: column;
+  }
+
+  #main {
+    flex: 1 auto;
+  }
+
+  #nav.less {
+    ul {
+      .display-flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+  }
+
+  !*#nav.less {
+    flex: 0 80px;
+  }*!
+  #nav.less-details {
+    flex: 0 322px;
+
+  }
+}*/

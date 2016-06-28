@@ -1,0 +1,168 @@
+@headerBackground: #00acbd;
+@headerColor: #fff;
+
+.font {
+  font-family: 'Roboto', sans-serif;
+}
+
+.display-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.order(@order) {
+  -webkit-box-ordinal-group: @order;
+  -moz-box-ordinal-group: @order;
+  -ms-flex-order: @order;
+  -webkit-order: @order;
+  order: @order;
+}
+
+.flex(@flex) {
+  -webkit-box-flex: @flex;
+  -moz-box-flex: @flex;
+  -webkit-flex: @flex;
+  -ms-flex: @flex;
+  flex: @flex;
+}
+
+.justify-content {
+  -webkit-flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+.flex-flow {
+  -webkit-flex-flow: column wrap;
+  flex-flow: column wrap;
+}
+
+.fade-common {
+  /* -webkit-transition-delay: .3s;
+   transition-delay: .3s;*/
+
+  opacity: 0;
+
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+
+  -webkit-transition: opacity .8s cubic-bezier(.25, .46, .45, .94), -webkit-transform .9s cubic-bezier(.25, .46, .45, .94);
+  transition: opacity .8s cubic-bezier(.25, .46, .45, .94), -webkit-transform .9s cubic-bezier(.25, .46, .45, .94);
+  transition: opacity .8s cubic-bezier(.25, .46, .45, .94), transform .9s cubic-bezier(.25, .46, .45, .94);
+  transition: opacity .8s cubic-bezier(.25, .46, .45, .94), transform .9s cubic-bezier(.25, .46, .45, .94), -webkit-transform .9s cubic-bezier(.25, .46, .45, .94);
+}
+
+.fade-in(@trans_top) {
+  opacity: 1;
+  -webkit-transform: translate(0,@trans_top);
+  -ms-transform: translate(0,@trans_top); //1.5rem
+  transform: translate(0,@trans_top);
+}
+
+@iterations: 15;
+.mixin-loop-transition (@i) when (@i > 0) {
+  &:nth-child(@{i}) {
+    -webkit-transition-delay: ( @i * 200ms);
+    transition-delay: ( @i * 200ms);
+  }
+  .mixin-loop-transition(@i - 1);
+}
+
+
+
+
+.fade.ng-enter {
+
+    .fade-common;
+
+    .mixin-loop-transition(@iterations);
+
+  /*transition:0.5s linear all;
+  opacity:0;*/
+}
+
+/* The finishing CSS styles for the enter animation */
+.fade.ng-enter.ng-enter-active {
+/*  opacity:1;*/ .fade-in(-1.6rem);
+}
+
+.fade.ng-leave { .fade-in(-1.6rem);
+/*  transition:0.5s linear all;
+  opacity:1;*/
+}
+.fade.ng-leave.ng-leave-active { .fade-in(-1.6rem);
+/*  opacity:0;*/
+}
+
+.fade.ng-move {
+
+  .fade-common;
+
+  .mixin-loop-transition(@iterations);
+
+  /*transition:0.5s linear all;
+  opacity:0;*/
+}
+
+/* The finishing CSS styles for the enter animation */
+.fade.ng-move.ng-move-active {
+  /*  opacity:1;*/ .fade-in(-1.6rem);
+}
+
+
+
+.repeated-item.ng-move, .repeated-item.ng-move { .fade-in(-1.6rem);
+ /* transition: all 0.5s linear;
+  opacity: 0;*/
+}
+
+ .repeated-item.ng-enter.ng-enter-active,
+ .repeated-item.ng-move.ng-move-active { .fade-in(-1.6rem);
+  /*opacity: 1;*/
+}
+
+.slide.ng-enter {
+  transition:0.5s linear all;
+  transform:translateY(-100px);
+}
+.slide.ng-enter.ng-enter-active {
+  transform:translateY(0);
+}
+
+
+
+.animate-enter,
+.animate-leave {
+  -webkit-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -moz-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -ms-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -o-transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  transition: 400ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  position: relative;
+  display: block;
+}
+
+.animate-leave.animate-leave-active,
+.animate-enter {
+  -webkit-transform: rotateX(-180deg) translatez(30px);
+  -moz-transform: rotateX(-180deg) translatez(30px);
+  -ms-transform: rotateX(-180deg) translatez(30px);
+  -o-transform: rotateX(-180deg) translatez(30px);
+  transform: rotateX(-180deg) translatez(30px);
+  opacity: 0;
+  height: 0px;
+}
+
+.animate-enter.animate-enter-active,
+.animate-leave {
+  -webkit-transform: rotateX(0deg) translatez(30px);
+  -moz-transform: rotateX(0deg) translatez(30px);
+  -ms-transform: rotateX(0deg) translatez(30px);
+  -o-transform: rotateX(0deg) translatez(30px);
+  transform: rotateX(0deg) translatez(30px);
+  opacity: 1;
+  height: 30px;
+}

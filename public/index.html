@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="app" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+
+   <!-- <link rel="stylesheet" href="stylesheets/style.css">-->
+
+    <!--normalize css in boostrap site-->
+   <!-- <script src="https://use.fontawesome.com/bd7a9e01b5.js"></script>-->
+    <!--<link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">-->
+
+    <!--<link rel='stylesheet' type='text/css' href="bower_components/font-awesome-bower/css/font-awesome.css">-->
+   <!-- <link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Roboto:900,700,400,300,200&subset=latin,cyrillic-ext,cyrillic'>-->
+
+
+
+    <!-- inject:css -->
+    <link rel="stylesheet" href="bower_components/font-awesome-bower/css/font-awesome.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/fonts.css">
+    <!-- endinject -->
+
+    <!--<link rel="stylesheet" href="dist/style.min.css">-->
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon"/>
+</head>
+<body>
+
+
+<section class="container" ui-view="view" ></section>
+
+
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular-animate/angular-animate.js"></script>
+
+
+<!--<script src="dist/webapp.min.js"></script>-->
+<!-- inject:js -->
+
+<script src="core/webapp.js"></script>
+<script src="core/config/decorators.js"></script>
+<script src="core/config/run.js"></script>
+<script src="core/config/states.js"></script>
+<script src="core/controllers/desktopController.js"></script>
+<script src="core/controllers/navController.js"></script>
+<script src="core/controllers/navDetailsController.js"></script>
+<script src="core/controllers/navDetailsListController.js"></script>
+<script src="core/controllers/productController.js"></script>
+<script src="core/directives/navBarDetailsDirective.js"></script>
+<script src="core/directives/navDetailsDirective.js"></script>
+<script src="core/directives/navDetailsListDirective.js"></script>
+<script src="core/directives/navItemDirective.js"></script>
+<script src="core/directives/navLinkDetailsDirective.js"></script>
+<script src="core/directives/prodItemDirective.js"></script>
+<script src="core/directives/uiLinkDirective.js"></script>
+<script src="core/directives/uiLoadingDirective.js"></script>
+<script src="core/services/desktopService.js"></script>
+<script src="core/services/navService.js"></script>
+<script src="core/services/productService.js"></script>
+<!-- endinject -->
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<div class="about">
+	<div class="container">
+		<h1 ng-bind="desktopCtrl.desktopData[0].caption"></h1>
+
+		<p ng-bind="desktopCtrl.desktopData[0].text"></p>
+
+		<section class="articles-wrap">
+			<article ng-if="item.show" ng-repeat="item in desktopCtrl.desktopData[0].articles">
+				<h2 ng-bind="item.caption"></h2>
+
+				<p ng-bind="item.text"></p>
+			</article>
+		</section>
+
+		<footer>
+			<ul class="socials">
+				<li class="item" ng-if="item.show" ui-link ng-repeat="item in desktopCtrl.desktopData[0].socials">
+					<i ng-class="item.icon" aria-hidden="true"></i>
+				</li>
+			</ul>
+
+			<div class="address">
+				<h2 ng-if="desktopCtrl.desktopData[0].address[0].show" ng-bind="desktopCtrl.desktopData[0].address[0].header"></h2>
+
+				<p ng-if="desktopCtrl.desktopData[0].address[1].show" ng-bind="desktopCtrl.desktopData[0].address[1].message"></p>
+			</div>
+
+			<ul class="contacts">
+				<li ng-if="item.show" ng-repeat="item in desktopCtrl.desktopData[0].contacts">
+					<i ng-class="item.icon" aria-hidden="true"></i>
+					<span ng-bind="item.caption"></span>
+				</li>
+			</ul>
+		</footer>
+	</div>
+</div>

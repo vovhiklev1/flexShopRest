@@ -1,0 +1,29 @@
+[
+  {
+    "name": "1",
+
+    "images": [
+      "product_pc_1.png",
+      "product_pc_2.png",
+      "product_pc_3.png"
+    ]
+  },
+  {
+    "name": "2",
+
+    "images": [
+      "product_pc_1.png",
+      "product_pc_2.png",
+      "product_pc_3.png"
+    ]
+  },
+  {
+    "name": "3",
+
+    "images": [
+      "product_pc_1.png",
+      "product_pc_2.png",
+      "product_pc_3.png"
+    ]
+  }
+]

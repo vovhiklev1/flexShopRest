@@ -1,0 +1,84 @@
+
+  {
+	"caption": "Leave your problems with the choice and we will give you quality in exchange.",
+	"text": "Simply getting from point A to point B used to be enough. But today's drivers also care about the quality of the trip. With a personalized experience for the driver, Wi-Fi for the kids in the backseat and safety for all, the latest in automobile technology is improving the ride for everyone.",
+	"articles": [
+	  {
+		"show": true,
+		"caption": "Quality",
+		"text": "The X12 LTE modem integrates the most advanced 4G LTE technologies announced in a system on a chip (SoC), enabling continuous, secure connectivity for in-car technology and personal devices."
+	  },
+	  {
+		"show": true,
+		"caption": "Speed choice",
+		"text": "The X12 LTE modem integrates the most advanced 4G LTE technologies announced in a system on a chip (SoC), enabling continuous, secure connectivity for in-car technology and personal devices."
+	  },
+	  {
+		"show": true,
+		"caption": "Support",
+		"text": "The X12 LTE modem integrates the most advanced 4G LTE technologies announced in a system on a chip (SoC), enabling continuous, secure connectivity for in-car technology and personal devices."
+	  }
+	],
+	"socials": [
+	  {
+		"name": "linkedin",
+		"link": "www.google.com",
+		"icon": "fa fa-linkedin",
+		"show": true
+	  },
+	  {
+		"name": "fa fa-facebook",
+		"link": "www.google.com.ua",
+		"icon": "fa fa-facebook",
+		"show": true
+	  },
+	  {
+		"name": "fa fa-twitter",
+		"link": "www.google.com.ua",
+		"icon": "fa fa-twitter",
+		"show": true
+	  },
+	  {
+		"name": "fa fa-vk",
+		"link": "www.google.com.ua",
+		"icon": "fa fa-vk",
+		"show": true
+	  },
+	  {
+		"name": "fa fa-google-plus",
+		"link": "www.google.com.ua",
+		"icon": "fa fa-google-plus",
+		"show": true
+	  }
+	],
+	"address": [
+	  {
+		"header": "We are based in Kiev.",
+		"show": true
+	  },
+	  {
+		"message": "We work with clients from all over Ukraine!",
+		"show": true
+	  }
+	],
+	"contacts": [
+	  {
+		"name": "mail",
+		"caption": "shop@gmail.com",
+		"icon": "fa fa-envelope",
+		"show": true
+	  },
+	  {
+		"name": "mobile",
+		"caption": "+38(067)980-33-92",
+		"icon": "fa fa-phone",
+		"show": true
+	  },
+	  {
+		"name": "home",
+		"caption": "Kiev, Ukraine",
+		"icon": "fa fa-home",
+		"show": true
+	  }
+	]
+  }
